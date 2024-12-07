@@ -57,9 +57,7 @@
     </style>
   </head>
   <body>
-    <p <style>
-      font-
-    </style>>Rock Paper Scissors</p>
+    <p>Rock Paper Scissors</p>
     <div class="game">
       <div onclick="
 
@@ -106,7 +104,10 @@
         ties: 0
       };*/
 
-      const score = JSON.parse(localStorage.getItem('score'));
+      //const score = JSON.parse(localStorage.getItem('score'));
+
+      const score = JSON.parse(localStorage.getItem('score')) || { wins: 0, losses: 0, ties: 0 };
+
 
       updateScoreElem ();
 
